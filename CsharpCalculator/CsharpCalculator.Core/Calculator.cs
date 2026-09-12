@@ -1,6 +1,6 @@
 namespace CsharpCalculator.Core;
 
-enum CalculatorOp
+public enum CalculatorOp
 {
     Add,
     Subtract,
@@ -9,7 +9,7 @@ enum CalculatorOp
     Power,
 }
 
-class Calculator
+public class Calculator
 {
     public static int Calculate(CalculatorOp[] ops, int[] nums, out int result)
     {
@@ -35,6 +35,7 @@ class Calculator
                 case CalculatorOp.Divide:
                     if (nums[i+1] == 0)
                     {
+                        result = 0;
                         return 1;
                     }
                     else {

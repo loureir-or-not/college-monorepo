@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="CsharpCalculator.Core/CsharpCalculator.Core.csproj" />
+  <Project Path="CsharpCalculator.CoreTests/CsharpCalculator.CoreTests.csproj" />
 </Solution>
