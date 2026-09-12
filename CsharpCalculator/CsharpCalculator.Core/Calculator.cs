@@ -9,7 +9,8 @@ enum CalculatorOp
     Power,
 }
 
-class Calculator {
+class Calculator
+{
     public static int Calculate(CalculatorOp[] ops, int[] nums, out int result)
     {
         if (ops.Length >= nums.Length)
@@ -20,7 +21,8 @@ class Calculator {
         result = nums[0];
         for (int i = 0; i < ops.Length; i++)
         {
-            switch (ops[i]) {
+            switch (ops[i])
+            {
                 case CalculatorOp.Add:
                     result += nums[i+1];
                     break;
@@ -34,7 +36,8 @@ class Calculator {
                     if (nums[i+1] == 0)
                     {
                         return 1;
-                    } else {
+                    }
+                    else {
                         result /= nums[i+1];
                     }
                     break;
