@@ -1,0 +1,2 @@
+[2026-11-11_18:43:18] Application started.
+[2026-11-11_18:43:18] Read event log successfully.
